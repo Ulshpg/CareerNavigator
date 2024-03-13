@@ -4,7 +4,7 @@ from langchain.chat_models import ChatOpenAI
 import os
 
 
-os.environ["OPENAI_API_KEY"] = "я"
+os.environ["OPENAI_API_KEY"] = "" #Токен апи гпт
 loaders = DirectoryLoader("data", "*.txt")
 index = VectorstoreIndexCreator().from_loaders([loaders])
 user_requests = {
